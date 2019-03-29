@@ -21,9 +21,11 @@ driver.get('http://www.baidu.com')
 #driver.find_element_by_link_text('hao123').click()
 
 #使用网页检查中的小箭头可以快速定位元素
-driver.find_element_by_id('kw').send_keys('ddos')
+#driver.find_element_by_id('kw').send_keys('ddos')
+#还可以在字符后面加回车符号来自动搜索
+driver.find_element_by_id('kw').send_keys('la\n')
 #自动搜索
-driver.find_element_by_id('su').click()
+#driver.find_element_by_id('su').click()
 #让它睡两秒钟，不然太快就关掉了
 time.sleep(3)
 
